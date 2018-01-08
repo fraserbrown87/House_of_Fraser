@@ -24,4 +24,8 @@ public class Shop {
     public String getAddress() {
         return address;
     }
+
+    public int getPhoneNumber() {
+        return phoneNumber;
+    }
 }

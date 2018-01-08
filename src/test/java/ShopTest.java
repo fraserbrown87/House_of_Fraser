@@ -25,4 +25,9 @@ public class ShopTest {
         assertEquals("145 Princes St, Edinburgh EH2 4YZ", shop.getAddress());
     }
 
+    @Test
+    public void hasPhoneNumber(){
+        assertEquals(01312252472, shop.getPhoneNumber());
+    }
+
 }

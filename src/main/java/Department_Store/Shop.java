@@ -20,12 +20,15 @@ public class Shop {
         return name;
     }
 
-
     public String getAddress() {
         return address;
     }
 
     public int getPhoneNumber() {
         return phoneNumber;
+    }
+
+    public int getFloorQuantity() {
+        return floorQuantity;
     }
 }

@@ -30,4 +30,9 @@ public class ShopTest {
         assertEquals(01312252472, shop.getPhoneNumber());
     }
 
+    @Test
+    public void hasFloornumber(){
+        assertEquals(6, shop.getFloorQuantity());
+    }
+
 }

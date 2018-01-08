@@ -46,5 +46,11 @@ public class ShopTest {
         assertEquals(900, openingDay.getOpeningTime());
     }
 
+    @Test
+    public void hasClosingTime(){
+        OpeningHours openingDay = shop.getOpeningDay();
+        assertEquals(1800, openingDay.getClosingTime());
+    }
+
 
 }

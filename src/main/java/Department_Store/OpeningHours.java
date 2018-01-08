@@ -22,9 +22,9 @@ public enum OpeningHours {
         return this.openingTime;
     }
 
-//    public int getClosingTime(){
-//        return this.closingTime;
-//    }
+    public int getClosingTime(){
+        return this.closingTime;
+    }
 
 
 }

@@ -17,7 +17,6 @@ public class ShopTest {
     @Test
     public void hasName() {
         assertEquals("House of Fraser", shop.getName());
-
     }
 
     @Test
@@ -31,7 +30,7 @@ public class ShopTest {
     }
 
     @Test
-    public void hasFloornumber(){
+    public void hasFloorNumber(){
         assertEquals(6, shop.getFloorQuantity());
     }
 
@@ -50,6 +49,15 @@ public class ShopTest {
     public void hasClosingTime(){
         OpeningHours openingDay = shop.getOpeningDay();
         assertEquals(1800, openingDay.getClosingTime());
+    }
+
+    @Test
+    public void getAllOpeningDays(){
+        OpeningHours[] expected = {OpeningHours.MONDAY, OpeningHours.TUESDAY, OpeningHours.WEDNESDAY, OpeningHours.THURSDAY, OpeningHours.FRIDAY, OpeningHours.SATURDAY, OpeningHours.SUNDAY};
+        OpeningHours[] days = OpeningHours.values();
+        assertEquals(7, days.length);
+        assertEquals(expected, days);
+
     }
 
 

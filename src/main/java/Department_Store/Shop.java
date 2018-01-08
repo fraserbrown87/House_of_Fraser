@@ -16,4 +16,12 @@ public class Shop {
         this.openingHours = openingHours;
     }
 
+    public String getName(){
+        return name;
+    }
+
+
+    public String getAddress() {
+        return address;
+    }
 }

@@ -6,14 +6,14 @@ public class Shop {
     private String address;
     private int phoneNumber;
     private int floorQuantity;
-    private OpeningHours openingHours;
+    private OpeningHours openingDay;
 
-    public Shop(String name, String address, int phoneNumber, int floorQuantity, OpeningHours openingHours){
+    public Shop(String name, String address, int phoneNumber, int floorQuantity, OpeningHours openingDay){
         this.name = name;
         this.address = address;
         this.phoneNumber = phoneNumber;
         this.floorQuantity = floorQuantity;
-        this.openingHours = openingHours;
+        this.openingDay = openingDay;
     }
 
     public String getName(){
@@ -30,5 +30,9 @@ public class Shop {
 
     public int getFloorQuantity() {
         return floorQuantity;
+    }
+
+    public OpeningHours getOpeningDay() {
+        return openingDay;
     }
 }

@@ -10,7 +10,7 @@ public class ShopTest {
 
     @Before
     public void before(){
-        shop = new Shop("House of Fraser", "145 Princes St, Edinburgh EH2 4YZ",01312252472, 6, OpeningHours.SUNDAY);
+        shop = new Shop("House of Fraser", "145 Princes St, Edinburgh EH2 4YZ",01312252472, 6, OpeningHours.MONDAY);
     }
 
 
@@ -34,5 +34,17 @@ public class ShopTest {
     public void hasFloornumber(){
         assertEquals(6, shop.getFloorQuantity());
     }
+
+    @Test
+    public void hasOpeningDay(){
+        assertEquals(OpeningHours.MONDAY, shop.getOpeningDay());
+    }
+
+    @Test
+    public void hasOpeningTime(){
+        OpeningHours openingDay = shop.getOpeningDay();
+        assertEquals(900, openingDay.getOpeningTime());
+    }
+
 
 }

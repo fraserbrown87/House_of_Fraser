@@ -18,4 +18,13 @@ public enum OpeningHours {
         this.closingTime = closingTime;
     }
 
+    public int getOpeningTime(){
+        return this.openingTime;
+    }
+
+//    public int getClosingTime(){
+//        return this.closingTime;
+//    }
+
+
 }

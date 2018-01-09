@@ -32,6 +32,11 @@ public class ItemTest {
     public void getBuyPrice(){
         assertEquals(50.0, item.getBuyPrice(),0.1);
     }
+
+    @Test
+    public void getStockLevel(){
+        assertEquals(10, item.getStockLevel());
+    }
 //
 //    @Test
 //    public void hasBrandName(){

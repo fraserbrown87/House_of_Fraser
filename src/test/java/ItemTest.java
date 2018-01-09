@@ -27,6 +27,11 @@ public class ItemTest {
     public void hasSellPrice(){
         assertEquals(100.0, item.getSellPrice(), 0.1);
     }
+
+    @Test
+    public void getBuyPrice(){
+        assertEquals(50.0, item.getBuyPrice(),0.1);
+    }
 //
 //    @Test
 //    public void hasBrandName(){

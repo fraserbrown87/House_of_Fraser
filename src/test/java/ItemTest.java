@@ -1,6 +1,7 @@
 import Department_Store.Items.Brands;
 import Department_Store.Items.Item;
 import Department_Store.Items.ItemSpec;
+import Department_Store.OpeningHours;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -19,7 +20,7 @@ public class ItemTest {
     }
 
     @Test
-    public void getItemSpec(){
+    public void hasItemSpec(){
         assertEquals(itemSpec, item.getItemSpec());
     }
 
@@ -35,7 +36,7 @@ public class ItemTest {
     }
 
     @Test
-    public void getBuyPrice(){
+    public void hasBuyPrice(){
         assertEquals(50.0, item.getBuyPrice(),0.1);
     }
 
@@ -46,7 +47,7 @@ public class ItemTest {
     }
 
     @Test
-    public void getStockLevel(){
+    public void hasStockLevel(){
         assertEquals(10, item.getStockLevel());
     }
 
@@ -55,9 +56,15 @@ public class ItemTest {
         item.setStockLevel(25);
         assertEquals(25, item.getStockLevel());
     }
-//
-//    @Test
-//    public void hasBrandName(){
-//        assertEquals(Brands.FRED_PERRY, item.getBrandName);
-//    }
+
+    @Test
+    public void hasBrandName(){
+        assertEquals(Brands.FRED_PERRY, itemSpec.getBrandName());
+    }
+
+    @Test
+    public void hasCategoryName(){
+        Brands brands = itemSpec.getBrandName();
+        assertEquals("Menswear", brands.getCategoryName());
+    }
 }

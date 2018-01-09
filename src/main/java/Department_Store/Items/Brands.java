@@ -11,14 +11,14 @@ public enum Brands {
     CLINIQUE ("Beauty"),
     DIOR ("Beauty");
 
-    private String department;
+    private String category;
 
-    Brands(String department){
-        this.department = department;
+    Brands(String category){
+        this.category = category;
     }
 
-    public String getDepartment(){
-        return this.department;
+    public String getCategoryName(){
+        return this.category;
     }
 
 }

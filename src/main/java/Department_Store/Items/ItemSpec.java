@@ -4,10 +4,13 @@ public class ItemSpec {
     private Brands brand;
     private String product;
 
-    public ItemSpec(Brands brand, String product){
-        this.brand = brand;
+    public ItemSpec(Brands brands, String product){
+        this.brand = brands;
         this.product = product;
     }
 
+    public Brands getBrandName(){
+        return brand;
+    }
 
 }

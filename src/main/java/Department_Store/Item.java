@@ -9,7 +9,7 @@ public class Item {
     private double buyPrice;
     private int stockLevel;
 
-    public Item{
+    public Item(String category, String brand, String product, double sellPrice, double buyPrice, int stockLevel) {
         this.category = category;
         this.brand = brand;
         this.product = product;

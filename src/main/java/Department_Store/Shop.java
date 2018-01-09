@@ -1,5 +1,7 @@
 package Department_Store;
 
+import java.util.ArrayList;
+
 public class Shop {
 
     private String name;
@@ -7,6 +9,7 @@ public class Shop {
     private int phoneNumber;
     private int floorQuantity;
     private OpeningHours openingDay;
+    private ArrayList<Department> departments;
 
     public Shop(String name, String address, int phoneNumber, int floorQuantity, OpeningHours openingDay){
         this.name = name;
@@ -14,6 +17,7 @@ public class Shop {
         this.phoneNumber = phoneNumber;
         this.floorQuantity = floorQuantity;
         this.openingDay = openingDay;
+        this.departments = new ArrayList<Department>();
     }
 
     public String getName(){

@@ -40,8 +40,20 @@ public class ItemTest {
     }
 
     @Test
+    public void setBuyPrice(){
+        item.setBuyPrice(75.0);
+        assertEquals(75.0, item.getBuyPrice(),0.1);
+    }
+
+    @Test
     public void getStockLevel(){
         assertEquals(10, item.getStockLevel());
+    }
+
+    @Test
+    public void setStockLevel(){
+        item.setStockLevel(25);
+        assertEquals(25, item.getStockLevel());
     }
 //
 //    @Test

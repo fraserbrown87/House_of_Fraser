@@ -48,4 +48,12 @@ public class DepartmentTest {
         department.addStock(stock);
         assertEquals(1, department.getStockCount());
     }
+
+    @Test
+    public void canRemoveStockFromDepartment(){
+        department.addStock(stock);
+        assertEquals(1, department.getStockCount());
+        department.removeStock(stock);
+        assertEquals(0, department.getStockCount());
+    }
 }

@@ -37,4 +37,8 @@ public class Department {
     public void addStock(Item stock) {
         this.stock.add(stock);
     }
+
+    public void removeStock(Item stock) {
+        this.stock.remove(stock);
+    }
 }

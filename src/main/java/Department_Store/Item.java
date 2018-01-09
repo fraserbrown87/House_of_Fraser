@@ -2,19 +2,19 @@ package Department_Store;
 
 public class Item {
 
-    private String category;
-    private String brand;
-    private String product;
+//    private ItenmSpec spec;
     private double sellPrice;
     private double buyPrice;
     private int stockLevel;
 
-    public Item(String category, String brand, String product, double sellPrice, double buyPrice, int stockLevel) {
-        this.category = category;
-        this.brand = brand;
-        this.product = product;
+    public Item(ItemSpec spec, double sellPrice, double buyPrice, int stockLevel) {
+//        this.spec = spec;
         this.sellPrice = sellPrice;
         this.buyPrice = buyPrice;
         this.stockLevel = stockLevel;
     }
+
+//    public Category getCatgory(){
+//        spec.getCategory();
+//    }
 }

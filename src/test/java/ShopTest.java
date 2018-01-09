@@ -20,13 +20,31 @@ public class ShopTest {
     }
 
     @Test
+    public void setName(){
+        shop.setName("Jenners");
+        assertEquals("Jenners", shop.getName());
+    }
+
+    @Test
     public void hasAddress(){
         assertEquals("145 Princes St, Edinburgh EH2 4YZ", shop.getAddress());
     }
 
     @Test
+    public void setAddress(){
+        shop.setAddress("48 Princes St, Edinburgh EH2 2YJ");
+        assertEquals("48 Princes St, Edinburgh EH2 2YJ", shop.getAddress());
+    }
+
+    @Test
     public void hasPhoneNumber(){
         assertEquals(01312252472, shop.getPhoneNumber());
+    }
+
+    @Test
+    public void setPhoneNumber(){
+        shop.setPhoneNumber(01315541455);
+        assertEquals(01315541455, shop.getPhoneNumber());
     }
 
     @Test
@@ -61,8 +79,7 @@ public class ShopTest {
 
     @Test
     public void shopDepartmentStartsEmpty(){
-        assertEquals(0, shop.getDepartmentcount());
+        assertEquals(0, shop.getDepartmentCount());
     }
-
 
 }

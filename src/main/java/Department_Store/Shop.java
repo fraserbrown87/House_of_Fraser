@@ -39,4 +39,8 @@ public class Shop {
     public OpeningHours getOpeningDay() {
         return openingDay;
     }
+
+    public int getDepartmentcount() {
+        return departments.size();
+    }
 }

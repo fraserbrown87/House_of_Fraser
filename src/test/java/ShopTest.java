@@ -57,7 +57,11 @@ public class ShopTest {
         OpeningHours[] days = OpeningHours.values();
         assertEquals(7, days.length);
         assertEquals(expected, days);
+    }
 
+    @Test
+    public void shopDepartmentStartsEmpty(){
+        assertEquals(0, shop.getDepartmentcount());
     }
 
 

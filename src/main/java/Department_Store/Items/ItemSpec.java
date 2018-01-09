@@ -13,4 +13,7 @@ public class ItemSpec {
         return brand;
     }
 
+    public String getProductName() {
+        return product;
+    }
 }

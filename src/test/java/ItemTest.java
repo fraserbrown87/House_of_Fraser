@@ -67,4 +67,9 @@ public class ItemTest {
         Brands brands = itemSpec.getBrandName();
         assertEquals("Menswear", brands.getCategoryName());
     }
+
+    @Test
+    public void hasProductName(){
+        assertEquals("Shirt", itemSpec.getProductName());
+    }
 }

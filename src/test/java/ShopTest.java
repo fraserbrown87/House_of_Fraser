@@ -12,7 +12,7 @@ public class ShopTest {
 
     @Before
     public void before(){
-        shop = new Shop("House of Fraser", "145 Princes St, Edinburgh EH2 4YZ",01312252472, 6, OpeningHours.MONDAY);
+        shop = new Shop("House of Fraser", "145 Princes St, Edinburgh EH2 4YZ",01312252472, 4, OpeningHours.MONDAY);
     }
 
 
@@ -51,7 +51,7 @@ public class ShopTest {
 
     @Test
     public void hasFloorNumber(){
-        assertEquals(6, shop.getFloorQuantity());
+        assertEquals(4, shop.getFloorQuantity());
     }
 
     @Test

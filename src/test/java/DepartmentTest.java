@@ -1,5 +1,5 @@
 import Department_Store.Department;
-import Department_Store.Item;
+import Department_Store.Items.Item;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 public class DepartmentTest {
 
     Department department;
-    Item stock;
+    Item item;
 
     @Before
     public void before(){
@@ -45,15 +45,15 @@ public class DepartmentTest {
 
     @Test
     public void canAddStockToDepartment(){
-        department.addStock(stock);
+        department.addStock(item);
         assertEquals(1, department.getStockCount());
     }
 
     @Test
     public void canRemoveStockFromDepartment(){
-        department.addStock(stock);
+        department.addStock(item);
         assertEquals(1, department.getStockCount());
-        department.removeStock(stock);
+        department.removeStock(item);
         assertEquals(0, department.getStockCount());
     }
 }

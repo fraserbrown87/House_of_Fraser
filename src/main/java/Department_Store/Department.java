@@ -1,5 +1,7 @@
 package Department_Store;
 
+import Department_Store.Items.Item;
+
 import java.util.ArrayList;
 
 public class Department {
@@ -34,11 +36,11 @@ public class Department {
         return stock.size();
     }
 
-    public void addStock(Item stock) {
-        this.stock.add(stock);
+    public void addStock(Item item) {
+        this.stock.add(item);
     }
 
-    public void removeStock(Item stock) {
-        this.stock.remove(stock);
+    public void removeStock(Item item) {
+        this.stock.remove(item);
     }
 }

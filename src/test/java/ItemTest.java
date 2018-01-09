@@ -29,6 +29,12 @@ public class ItemTest {
     }
 
     @Test
+    public void setSellPrice(){
+        item.setSellPrice(150.0);
+        assertEquals(150.0, item.getSellPrice(),0.1);
+    }
+
+    @Test
     public void getBuyPrice(){
         assertEquals(50.0, item.getBuyPrice(),0.1);
     }

@@ -26,7 +26,12 @@ public class Department {
         return floorNumber;
     }
 
+    public void setDepartmentFloorNumber(int floorNumber) {
+        this.floorNumber = floorNumber;
+    }
+
     public int getStockCount() {
         return stock.size();
     }
+
 }

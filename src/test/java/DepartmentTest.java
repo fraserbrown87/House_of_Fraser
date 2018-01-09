@@ -31,6 +31,12 @@ public class DepartmentTest {
     }
 
     @Test
+    public void setDepartmentFloorNumber(){
+        department.setDepartmentFloorNumber(2);
+        assertEquals(2, department.getDepartmentFloorNumber());
+    }
+
+    @Test
     public void departmentStockStartsEmpty(){
         assertEquals(0, department.getStockCount());
     }

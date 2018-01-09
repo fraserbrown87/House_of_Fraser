@@ -18,6 +18,10 @@ public class Department {
         return departmentName;
     }
 
+    public void setDepartmentName(String departmentName){
+        this.departmentName = departmentName;
+    }
+
     public int getDepartmentFloorNumber() {
         return floorNumber;
     }

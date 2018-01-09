@@ -20,6 +20,12 @@ public class DepartmentTest {
     }
 
     @Test
+    public void setDepartmentName(){
+        department.setDepartmentName("Womenswear");
+        assertEquals("Womenswear", department.getDepartmentName());
+    }
+
+    @Test
     public void getDepartmenFloorNumber(){
         assertEquals(1, department.getDepartmentFloorNumber());
     }

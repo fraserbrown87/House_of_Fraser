@@ -42,7 +42,6 @@ public class Shop {
 
     public void setPhoneNumber(int phoneNumber){
         this.phoneNumber = phoneNumber;
-
     }
 
     public int getFloorQuantity() {

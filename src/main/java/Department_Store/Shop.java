@@ -56,5 +56,7 @@ public class Shop {
         return departments.size();
     }
 
-
+    public void addDepartment(Department department) {
+        this.departments.add(department);
+    }
 }

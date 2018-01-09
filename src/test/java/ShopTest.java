@@ -90,4 +90,12 @@ public class ShopTest {
         assertEquals(1, shop.getDepartmentCount());
     }
 
+    @Test
+    public void canRemoveDepartment(){
+        shop.addDepartment(department);
+        assertEquals(1, shop.getDepartmentCount());
+        shop.removeDepartment(department);
+        assertEquals(0, shop.getDepartmentCount());
+    }
+
 }

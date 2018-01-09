@@ -34,4 +34,7 @@ public class Department {
         return stock.size();
     }
 
+    public void addStock(Item stock) {
+        this.stock.add(stock);
+    }
 }

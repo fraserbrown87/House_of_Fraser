@@ -1,4 +1,5 @@
 import Department_Store.Department;
+import Department_Store.Item;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -8,6 +9,7 @@ import static org.junit.Assert.assertEquals;
 public class DepartmentTest {
 
     Department department;
+    Item stock;
 
     @Before
     public void before(){
@@ -39,5 +41,11 @@ public class DepartmentTest {
     @Test
     public void departmentStockStartsEmpty(){
         assertEquals(0, department.getStockCount());
+    }
+
+    @Test
+    public void canAddStockToDepartment(){
+        department.addStock(stock);
+        assertEquals(1, department.getStockCount());
     }
 }

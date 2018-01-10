@@ -25,6 +25,4 @@ public enum OpeningHours {
     public int getClosingTime(){
         return this.closingTime;
     }
-
-
 }

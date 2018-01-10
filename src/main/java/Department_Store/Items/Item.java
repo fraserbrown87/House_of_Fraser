@@ -18,7 +18,6 @@ public class Item {
         return spec;
     }
 
-
     public double getSellPrice() {
         return sellPrice;
     }
@@ -43,8 +42,7 @@ public class Item {
         this.stockLevel = stockLevel;
     }
 
-
-//    public Category getCatgory(){
-//        spec.getCategory();
+//    public Product getProduct(){
+//        spec.getProduct();
 //    }
 }

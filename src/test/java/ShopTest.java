@@ -15,7 +15,6 @@ public class ShopTest {
         shop = new Shop("House of Fraser", "145 Princes St, Edinburgh EH2 4YZ",01312252472, 4, OpeningHours.MONDAY);
     }
 
-
     @Test
     public void hasName() {
         assertEquals("House of Fraser", shop.getName());

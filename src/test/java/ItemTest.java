@@ -72,4 +72,19 @@ public class ItemTest {
     public void hasProductName(){
         assertEquals("Shirt", itemSpec.getProductName());
     }
+
+    @Test
+    public void setProductName(){
+        itemSpec.setProductName("Polo shirt");
+        assertEquals("Polo shirt", itemSpec.getProductName());
+    }
+
+    @Test
+    public void getAllBrands(){
+        Brands[] expected = {Brands.FRED_PERRY, Brands.RALPH_LAUREN, Brands.WAREHOUSE, Brands.DKNY, Brands.VANS, Brands.UGG, Brands.CLINIQUE, Brands.DIOR};
+        Brands[] name = Brands.values();
+        assertEquals(8, name.length);
+        assertEquals(expected, name);
+
+    }
 }

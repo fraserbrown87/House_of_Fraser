@@ -16,4 +16,12 @@ public class ItemSpec {
     public String getProductName() {
         return product;
     }
+
+    public void setProductName(String product) {
+        this.product = product;
+    }
+
+    public Brands getAllBrands(){
+        return brand;
+    }
 }

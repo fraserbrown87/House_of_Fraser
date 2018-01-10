@@ -1,5 +1,6 @@
 import Department_Store.Department;
 import Department_Store.Items.Item;
+import Customer.Customer;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,10 +11,12 @@ public class DepartmentTest {
 
     Department department;
     Item item;
+    Customer customer;
 
     @Before
     public void before(){
         department = new Department("Menswear", 1);
+        customer = new Customer("John Doe", 300.0);
     }
 
     @Test
@@ -61,5 +64,24 @@ public class DepartmentTest {
     public void canAddSevenToFloorNum() {
         department.addOneToFloor();
         assertEquals(8, department.getDepartmentFloorNumber());
+    }
+
+    @Test
+    public void departmentCustomersStartEmpty(){
+        assertEquals(0, department.getCustomerCount());
+    }
+
+    @Test
+    public void canAddCustomerToDepartment(){
+        department.addCustomer(customer);
+        assertEquals(1, department.getCustomerCount());
+    }
+
+    @Test
+    public void canRemoveCustomerFromDepartment(){
+        department.addCustomer(customer);
+        assertEquals(1, department.getCustomerCount());
+        department.removeCustomer(customer);
+        assertEquals(0, department.getCustomerCount());
     }
 }

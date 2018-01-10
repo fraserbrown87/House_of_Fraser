@@ -8,13 +8,13 @@ public class Customer {
     private String customerName;
     private double wallet;
     private ArrayList<Item> basket;
-//    private ArrayList<PaymentMethod> paymentOption;
+    private ArrayList<PaymentMethod> paymentOption;
 
     public Customer(String customerName, double wallet){
         this.customerName = customerName;
         this.wallet = wallet;
         this.basket = new ArrayList<Item>();
-//        this.paymentOption = new ArrayList<PaymentMethod>();
+        this.paymentOption = new ArrayList<PaymentMethod>();
     }
 
     public String getCustomerName() {
@@ -39,5 +39,9 @@ public class Customer {
 
     public void addItemToBasket(Item item){
         this.basket.add(item);
+    }
+
+    public void removeItemFromBasket(Item item) {
+        this.basket.remove(item);
     }
 }

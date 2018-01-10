@@ -51,4 +51,12 @@ public class CustomerTest {
         customer.addItemToBasket(item);
         assertEquals(1, customer.getBasketItemCount());
     }
+
+    @Test
+    public void canRemoveItemFromBasket(){
+        customer.addItemToBasket(item);
+        assertEquals(1, customer.getBasketItemCount());
+        customer.removeItemFromBasket(item);
+        assertEquals(0, customer.getBasketItemCount());
+    }
 }

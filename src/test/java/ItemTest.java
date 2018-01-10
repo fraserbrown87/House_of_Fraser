@@ -70,13 +70,13 @@ public class ItemTest {
 
     @Test
     public void hasProductName(){
-        assertEquals("Shirt", itemSpec.getProductName());
+        assertEquals("Shirt", item.getProduct());
     }
 
     @Test
     public void setProductName(){
-        itemSpec.setProductName("Polo shirt");
-        assertEquals("Polo shirt", itemSpec.getProductName());
+        item.setProduct("Polo shirt");
+        assertEquals("Polo shirt", item.getProduct());
     }
 
     @Test

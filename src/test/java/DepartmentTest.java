@@ -56,4 +56,10 @@ public class DepartmentTest {
         department.removeStock(item);
         assertEquals(0, department.getStockCount());
     }
+
+    @Test
+    public void canAddSevenToFloorNum() {
+        department.addOneToFloor();
+        assertEquals(8, department.getDepartmentFloorNumber());
+    }
 }

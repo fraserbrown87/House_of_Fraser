@@ -42,7 +42,11 @@ public class Item {
         this.stockLevel = stockLevel;
     }
 
-//    public Product getProduct(){
-//        spec.getProduct();
-//    }
+    public String getProduct(){
+        return this.spec.getProductName();
+    }
+
+    public void setProduct(String newName){
+        this.spec.setProductName(newName);
+    }
 }

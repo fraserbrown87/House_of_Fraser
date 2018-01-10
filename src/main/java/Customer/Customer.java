@@ -32,4 +32,12 @@ public class Customer {
     public void setCustomerWallet(double customerWallet) {
         this.wallet = customerWallet;
     }
+
+    public int getBasketItemCount() {
+        return basket.size();
+    }
+
+    public void addItemToBasket(Item item){
+        this.basket.add(item);
+    }
 }

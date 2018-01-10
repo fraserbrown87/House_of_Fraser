@@ -43,4 +43,8 @@ public class Department {
     public void removeStock(Item item) {
         this.stock.remove(item);
     }
+
+    public void addOneToFloor() {
+        this.floorNumber += 7;
+    }
 }

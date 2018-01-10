@@ -70,4 +70,14 @@ public class CustomerTest {
 
     }
 
+    @Test
+    public void canReturnItem(){
+        customer.addItemToBasket(item);
+        customer.buyItem(item);
+        assertEquals(200, customer.getCustomerWallet(),0.1);
+        customer.removeItemFromBasket(item);
+        customer.returnItem(item);
+        assertEquals(300, customer.getCustomerWallet(),0.1);
+    }
+
 }

@@ -59,4 +59,15 @@ public class CustomerTest {
         customer.removeItemFromBasket(item);
         assertEquals(0, customer.getBasketItemCount());
     }
+
+    @Test
+    public void canBuyItem(){
+//        add item to basket
+        customer.addItemToBasket(item);
+//        find price of item
+        customer.buyItem(item);
+        assertEquals(200.0, customer.getCustomerWallet(),0.1);
+
+    }
+
 }

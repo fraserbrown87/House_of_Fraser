@@ -44,4 +44,10 @@ public class Customer {
     public void removeItemFromBasket(Item item) {
         this.basket.remove(item);
     }
+
+    public void buyItem(Item item){
+        double itemPrice = item.getSellPrice();
+        this.wallet -= itemPrice;
+    }
+
 }

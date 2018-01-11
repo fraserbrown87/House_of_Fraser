@@ -47,5 +47,16 @@ public class StaffTest {
         assertEquals(19000, employee.getSalary());
     }
 
+    @Test
+    public void hasDepartment(){
+        assertEquals("Menswear", employee.getDepartment());
+    }
+
+    @Test
+    public void setDepartment(){
+        employee.setDepartment("Footwear");
+        assertEquals("Footwear", employee.getDepartment());
+    }
+
 
 }

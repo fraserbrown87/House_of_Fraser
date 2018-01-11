@@ -12,8 +12,8 @@ public class StaffTest {
 
     @Before
     public void before(){
-        salesAssistant = new SalesAssistant("Tom Cruise", "JR 57 48 21 A", 18000);
         department = new Department("Menswear", 1);
+        salesAssistant = new SalesAssistant("Tom Cruise", "JR 57 48 21 A", 18000, department);
     }
 
     @Test
@@ -50,9 +50,16 @@ public class StaffTest {
     }
 
     @Test
-    public void hasDeptment(){
-        assertEquals(department, department.getDepartmentName());
+    public void hasDepartment(){
+        assertEquals("Menswear", salesAssistant.getDepartment());
     }
+
+    @Test
+    public void setDepartment(){
+        salesAssistant.setDepartment("Footwear");
+        assertEquals("Footwear", salesAssistant.getDepartment());
+    }
+    
 
 
 }

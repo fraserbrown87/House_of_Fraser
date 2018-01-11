@@ -6,7 +6,7 @@ public class SalesAssistant extends Employee {
 
     Department dept;
 
-    public SalesAssistant(String name, String NINumber, int salary){
+    public SalesAssistant(String name, String NINumber, int salary, Department dept){
         super(name, NINumber, salary);
         this.dept = dept;
     }
@@ -35,7 +35,11 @@ public class SalesAssistant extends Employee {
         this.salary = salary;
     }
 
-    public Department getDept(){
-        return dept;
+    public String getDepartment(){
+        return this.dept.getDepartmentName();
+    }
+
+    public void setDepartment(String dept){
+        this.dept.setDepartmentName(dept);
     }
 }

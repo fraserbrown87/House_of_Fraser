@@ -21,7 +21,4 @@ public class ItemSpec {
         this.product = product;
     }
 
-    public Brands getAllBrands(){
-        return brand;
-    }
 }

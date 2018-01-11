@@ -29,4 +29,12 @@ public class Employee {
     public void setNINumber(String NINumber) {
         this.NINumber = NINumber;
     }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
 }

@@ -36,5 +36,16 @@ public class StaffTest {
         assertEquals("JR 47 23 18 J", employee.getNINumber());
     }
 
+    @Test
+    public void hasSalary(){
+        assertEquals(18000, employee.getSalary());
+    }
+
+    @Test
+    public void setSalary(){
+        employee.setSalary(19000);
+        assertEquals(19000, employee.getSalary());
+    }
+
 
 }

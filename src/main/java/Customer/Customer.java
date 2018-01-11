@@ -50,7 +50,7 @@ public class Customer {
         this.wallet -= itemPrice;
     }
 
-    public void returnItem(Item item) {
+    public void refundItem(Item item) {
         double itemPrice = item.getSellPrice();
         this.wallet += itemPrice;
     }

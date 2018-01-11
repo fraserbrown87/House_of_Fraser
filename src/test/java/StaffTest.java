@@ -25,5 +25,16 @@ public class StaffTest {
         assertEquals("Val Kilmer", employee.getEmployeeName());
     }
 
+    @Test
+    public void hasNINumber(){
+        assertEquals("JR 57 48 21 A", employee.getNINumber());
+    }
+
+    @Test
+    public void setNINumber(){
+        employee.setNINumber("JR 47 23 18 J");
+        assertEquals("JR 47 23 18 J", employee.getNINumber());
+    }
+
 
 }

@@ -21,4 +21,12 @@ public class Employee {
     public void setEmployeeName(String employeeName) {
         this.name = employeeName;
     }
+
+    public String getNINumber() {
+        return NINumber;
+    }
+
+    public void setNINumber(String NINumber) {
+        this.NINumber = NINumber;
+    }
 }

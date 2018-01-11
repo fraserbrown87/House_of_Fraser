@@ -1,61 +1,57 @@
-import Staff.Employee;
+import Department_Store.Department;
+import Staff.SalesAssistant;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 
 public class StaffTest {
 
-    Employee employee;
+    SalesAssistant salesAssistant;
+    Department department;
 
     @Before
     public void before(){
-        employee = new Employee("Tom Cruise", "JR 57 48 21 A", 18000, "Menswear");
+        salesAssistant = new SalesAssistant("Tom Cruise", "JR 57 48 21 A", 18000);
+        department = new Department("Menswear", 1);
     }
 
     @Test
     public void hasEmployeeName(){
-        assertEquals("Tom Cruise", employee.getEmployeeName());
+        assertEquals("Tom Cruise", salesAssistant.getEmployeeName());
     }
 
     @Test
     public void setEmployeeName(){
-        employee.setEmployeeName("Val Kilmer");
-        assertEquals("Val Kilmer", employee.getEmployeeName());
+        salesAssistant.setEmployeeName("Val Kilmer");
+        assertEquals("Val Kilmer", salesAssistant.getEmployeeName());
     }
 
     @Test
     public void hasNINumber(){
-        assertEquals("JR 57 48 21 A", employee.getNINumber());
+        assertEquals("JR 57 48 21 A", salesAssistant.getNINumber());
     }
 
     @Test
     public void setNINumber(){
-        employee.setNINumber("JR 47 23 18 J");
-        assertEquals("JR 47 23 18 J", employee.getNINumber());
+        salesAssistant.setNINumber("JR 47 23 18 J");
+        assertEquals("JR 47 23 18 J", salesAssistant.getNINumber());
     }
 
     @Test
     public void hasSalary(){
-        assertEquals(18000, employee.getSalary());
+        assertEquals(18000, salesAssistant.getSalary());
     }
 
     @Test
     public void setSalary(){
-        employee.setSalary(19000);
-        assertEquals(19000, employee.getSalary());
+        salesAssistant.setSalary(19000);
+        assertEquals(19000, salesAssistant.getSalary());
     }
 
     @Test
-    public void hasDepartment(){
-        assertEquals("Menswear", employee.getDepartment());
-    }
-
-    @Test
-    public void setDepartment(){
-        employee.setDepartment("Footwear");
-        assertEquals("Footwear", employee.getDepartment());
+    public void hasDeptment(){
+        assertEquals(department, department.getDepartmentName());
     }
 
 

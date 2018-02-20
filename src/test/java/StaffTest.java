@@ -26,7 +26,7 @@ public class StaffTest {
         manager = new Manager("Bill Lumbergh", "JR 44 33 22 J", 30000);
         customer = new Customer("Fraser Brown", 500.0);
         itemSpec1 = new ItemSpec(Brands.FRED_PERRY, "Shirt");
-        item1 = new Item(itemSpec1, 10.0, 50.0, 10);
+        item1 = new Item(itemSpec1, 100.0, 50.0, 10);
     }
 
     @Test
@@ -77,7 +77,7 @@ public class StaffTest {
     public void sellItem(){
         customer.addItemToBasket(item1);
         salesAssistant.sellItem(customer, item1);
-        assertEquals(490, customer.getCustomerWallet(),0.1);
+        assertEquals(400, customer.getCustomerWallet(),0.1);
     }
 
 

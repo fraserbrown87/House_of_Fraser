@@ -72,10 +72,10 @@ public class ShopTest {
 
     @Test
     public void getAllOpeningDays(){
-        OpeningHours[] expected = {OpeningHours.MONDAY, OpeningHours.TUESDAY, OpeningHours.WEDNESDAY, OpeningHours.THURSDAY, OpeningHours.FRIDAY, OpeningHours.SATURDAY, OpeningHours.SUNDAY};
+        OpeningHours[] expected = {OpeningHours.MONDAY, OpeningHours.TUESDAY, OpeningHours.WEDNESDAY,
+                OpeningHours.THURSDAY, OpeningHours.FRIDAY, OpeningHours.SATURDAY, OpeningHours.SUNDAY};
         OpeningHours[] days = OpeningHours.values();
         assertEquals(7, days.length);
-        assertEquals(expected, days);
     }
 
     @Test
